@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:app/login_page.dart';
 import 'chat_page.dart'; // Import Chat Page
-import 'journal_page.dart'; // Import Journal Page
+import 'journals_page.dart'; // Import Journal Page
 //import 'library_page.dart'; // Import Library Page (if it exists)
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -101,7 +100,7 @@ class _HomePageState extends State<HomePage> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => JournalPage(),
+        builder: (context) => JournalsPage(),
       ), // Navigate to JournalPage
     );
   }
@@ -110,7 +109,7 @@ class _HomePageState extends State<HomePage> {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => JournalPage(),
+        builder: (context) => JournalsPage(),
       ), // Navigate to LibraryPage
     );
   }
