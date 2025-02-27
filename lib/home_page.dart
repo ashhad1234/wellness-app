@@ -5,6 +5,7 @@ import 'chat_page.dart'; // Import Chat Page
 import 'journals_page.dart'; // Import Journal Page
 //import 'library_page.dart'; // Import Library Page (if it exists)
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'mini_habits_service.dart';
 
 class HomePage extends StatefulWidget {
   @override
